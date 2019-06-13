@@ -1,0 +1,58 @@
+@import settings
+@import base
+
+body
+  background: $lightbrown
+  font-family: $font-family
+
+.content
+  position: relative
+  width: 100vw
+  overflow: hidden
+  min-height: 100vh
+
+  &:before,
+  &:after
+    content: " "
+    width: 200vw
+    height: 200vw
+    transform: rotate(45deg) translateX(-220vw)
+    position: absolute
+    z-index: -1
+    top: 20rem
+    left: 0
+    background: $brown
+    opacity: .15
+
+  &:after
+    transform: rotate(45deg) translateX(150vw)
+    top: -20rem
+    opacity: .08
+
+.topBar
+  position: fixed
+  z-index: 30
+  height: .4rem
+  background: $lightblue
+  transition-property: width
+  transition-duration: 300ms
+  transition-timing-function: cubic-bezier(1,0,0,1)
+  width: 0
+
+  &.step1
+    width: 100 / 6 * 1vw
+
+  &.step2
+    width: 100 / 6 * 2vw
+
+  &.step3
+    width: 100 / 6 * 3vw
+
+  &.step4
+    width: 100 / 6 * 4vw
+
+  &.step5
+    width: 100 / 6 * 5vw
+
+  &.step6
+    width: 100 / 6 * 6vw

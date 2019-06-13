@@ -1,0 +1,14 @@
+{
+ "name": "Tests",
+ "version": "1.0.0",
+ "scripts": {
+  "start": "grunt"
+ },
+ "license": "MIT",
+ "dependencies": {
+  "grunt": "^1.0.4",
+  "grunt-cli": "^1.2.0",
+  "grunt-contrib-sass": "^1.0.0",
+  "grunt-contrib-watch": "^1.1.0"
+ }
+}

@@ -1,0 +1,35 @@
+$lightbrown: #fcf8f3              
+$lightblue: #aedadd             
+$ultralightblue: #f0f2f3             
+$blue: #6e7da2              
+$brown: #db996c              
+
+$font-family: 'Amatic SC', cursive
+
+=box-sizing($box)
+  -webkit-box-sizing: $box
+  box-sizing:         $box
+  
+=transition($animation)
+  -webkit-transition: $animation
+  transition: $animation
+
+=transform($transform)
+  -webkit-transform: $transform
+  transform: $transform
+
+=delay($delay)
+  -webkit-transition-delay: $delay
+  transition-delay: $delay
+
+=duration($duration1, $duration2)
+  -webkit-transition-duration: $duration1, $duration2
+  transition-duration: $duration1, $duration2
+
+=property($property1, $property2)
+  -webkit-transition-property: $property1, $property2
+  transition-property: $property1, $property2
+  
+=filter($filter)
+  -webkit-filter: $filter
+  filter: $filter

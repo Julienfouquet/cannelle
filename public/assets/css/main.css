@@ -1,0 +1,129 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  line-height: 1;
+  font-size: 62.5%;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body, input, button, textarea {
+  font-family: "Amatic SC", cursive;
+}
+
+strong {
+  font-weight: 700;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+body {
+  background: #fcf8f3;
+  font-family: "Amatic SC", cursive;
+}
+
+.content {
+  position: relative;
+  width: 100vw;
+  overflow: hidden;
+  min-height: 100vh;
+}
+.content:before, .content:after {
+  content: " ";
+  width: 200vw;
+  height: 200vw;
+  transform: rotate(45deg) translateX(-220vw);
+  position: absolute;
+  z-index: -1;
+  top: 20rem;
+  left: 0;
+  background: #db996c;
+  opacity: 0.15;
+}
+.content:after {
+  transform: rotate(45deg) translateX(150vw);
+  top: -20rem;
+  opacity: 0.08;
+}
+
+.topBar {
+  position: fixed;
+  z-index: 30;
+  height: 0.4rem;
+  background: #aedadd;
+  transition-property: width;
+  transition-duration: 300ms;
+  transition-timing-function: cubic-bezier(1, 0, 0, 1);
+  width: 0;
+}
+.topBar.step1 {
+  width: 16.6666666667vw;
+}
+.topBar.step2 {
+  width: 33.3333333333vw;
+}
+.topBar.step3 {
+  width: 50vw;
+}
+.topBar.step4 {
+  width: 66.6666666667vw;
+}
+.topBar.step5 {
+  width: 83.3333333333vw;
+}
+.topBar.step6 {
+  width: 100vw;
+}
+
+/*# sourceMappingURL=main.css.map */
