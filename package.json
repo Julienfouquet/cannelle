@@ -1,13 +1,12 @@
 {
-  "name": "tests",
-  "version": "1.0.0",
-  "description": "Tests JFQ",
-  "main": "index.js",
-  "scripts": {
-    "start": "node app.js"
-  },
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-  }
+ "name": "Tests",
+ "version": "1.0.0",
+ "scripts": {
+  "start": "node server.js"
+ },
+ "license": "MIT",
+ "dependencies": {
+  "body-parser": "^1.18.3",
+  "express": "^4.16.4"
+ }
 }
