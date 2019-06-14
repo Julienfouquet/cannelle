@@ -5,9 +5,6 @@ const port = process.env.PORT || 4800;
 const path = require("path");
 const bodyParser = require('body-parser');
 
-// Variable
-var savedHistory = null;
-
 // To load static files
 express.static('/public');
 app.use(express.static('public'));
